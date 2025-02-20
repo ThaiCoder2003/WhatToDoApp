@@ -14,6 +14,8 @@ class Note {
         required this.title,
         required this.description,
         required this.date,
+        required this.category,
+        required this.isDone,
     });
 
     Map<String, dynamic> toMap() {
@@ -22,6 +24,8 @@ class Note {
             'title': title,
             'description': description,
             'date': date.toIso8601String(),
+            'category': category,
+            'isDone': isDone,
         };
     }
 
